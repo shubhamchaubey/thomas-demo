@@ -1,0 +1,6 @@
+apiVersion: v2
+name: coturn
+description: A Helm chart for Kubernetes to deploy Coturn TURN/STUN server
+version: 0.1.0
+appVersion: 4.6.2
+dependencies: []
