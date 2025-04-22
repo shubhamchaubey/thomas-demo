@@ -20,7 +20,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build("${IMAGE_NAME}:${TAG}", "--build-arg VERSION=${env.BUILD_NUMBER} coturn/docker/coturn/debian/.")
+                    docker.build("${IMAGE_NAME}:${TAG}", "--build-arg VERSION=${env.BUILD_NUMBER} -f docker/coturn/debian/Dockerfile .")
                 }
             }
         }
